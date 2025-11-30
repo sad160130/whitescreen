@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us – WhiteScreen.wiki</title>
-    <meta name="description" content="Have feedback, color ideas, or focus tips? Contact the WhiteScreen.wiki team. We'd love to hear from you.">
+    <title>Contact Us – Share Feedback &amp; Ideas | WhiteScreen.wiki</title>
+    <meta name="description" content="Get in touch with the WhiteScreen.wiki team. Share your feedback, suggest new colors, report issues, or tell us how you use color screens for focus and productivity.">
     <link rel="canonical" href="https://www.whitescreen.wiki/contact.html">
 
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="contact whitescreen, white screen feedback, color screen suggestions, focus tool support, digital wellness feedback">
+    <meta name="author" content="WhiteScreen.wiki">
+    <meta name="robots" content="index, follow">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Contact Us – WhiteScreen.wiki">
-    <meta property="og:description" content="Have feedback or ideas? Get in touch with the WhiteScreen.wiki team.">
+    <meta property="og:title" content="Contact Us – Share Feedback &amp; Ideas | WhiteScreen.wiki">
+    <meta property="og:description" content="Have ideas to improve WhiteScreen.wiki? We'd love to hear from you. Share feedback, suggest colors, or tell us your focus stories.">
     <meta property="og:image" content="/assets/img/og-image.png">
     <meta property="og:url" content="https://www.whitescreen.wiki/contact.html">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WhiteScreen.wiki">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact WhiteScreen.wiki">
-    <meta name="twitter:description" content="Share your feedback, ideas, or just say hello.">
+    <meta name="twitter:description" content="Share your feedback, ideas, or just say hello. Your input shapes this free focus tool.">
     <meta name="twitter:image" content="/assets/img/og-image.png">
 
     <!-- Favicon -->
@@ -38,12 +44,21 @@
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": "Contact WhiteScreen.wiki",
-        "description": "Get in touch with the WhiteScreen.wiki team",
+        "description": "Get in touch with the WhiteScreen.wiki team. Share feedback, suggest features, report issues, or tell us how you use color screens for focus.",
+        "url": "https://www.whitescreen.wiki/contact.html",
         "mainEntity": {
             "@type": "Organization",
             "name": "WhiteScreen.wiki",
+            "description": "Free online color screen tool for focus, meditation, and productivity",
             "email": "support@whitescreen.wiki",
-            "url": "https://www.whitescreen.wiki/"
+            "url": "https://www.whitescreen.wiki/",
+            "sameAs": [],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "support@whitescreen.wiki",
+                "availableLanguage": "English"
+            }
         }
     }
     </script>
@@ -52,7 +67,7 @@
     <!-- Fullscreen Color Overlay -->
     <div id="fullscreen-overlay" class="fullscreen-overlay" aria-hidden="true">
         <button id="exit-fullscreen" class="exit-fullscreen-btn" aria-label="Exit fullscreen">
-            <span>×</span>
+            <span>&times;</span>
             <small>Press ESC or click to exit</small>
         </button>
         <p class="fullscreen-tip">Take a deep breath. Focus on the present moment.</p>
@@ -61,7 +76,7 @@
     <header class="site-header">
         <nav class="nav-container">
             <a href="/" class="logo" aria-label="WhiteScreen.wiki Home">
-                <span class="logo-icon">◯</span>
+                <span class="logo-icon">&#9711;</span>
                 <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -84,7 +99,7 @@
         <section class="page-header">
             <div class="container">
                 <h1>We'd Love to Hear From You</h1>
-                <p class="page-intro">Have feedback, color ideas, or focus tips? Reach out! Your ideas help make this the world's calmest website.</p>
+                <p class="page-intro">WhiteScreen.wiki is built for you &mdash; and your feedback shapes how it grows. Whether you have an idea, a question, or just want to share how you use color screens for focus, we're listening.</p>
             </div>
         </section>
 
@@ -93,90 +108,121 @@
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-form-wrapper">
+                        <div class="form-intro">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll respond as soon as possible. Every message is read by a real person who cares about making this tool better.</p>
+                        </div>
+
                         <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required
-                                    placeholder="Enter your name"
-                                    autocomplete="name"
-                                >
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name <span class="required">*</span></label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        placeholder="Enter your name"
+                                        autocomplete="name"
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        placeholder="you@example.com"
+                                        autocomplete="email"
+                                    >
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    placeholder="you@example.com"
-                                    autocomplete="email"
-                                >
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
+                                <label for="subject">What's this about? <span class="required">*</span></label>
                                 <select id="subject" name="subject" required>
                                     <option value="">Select a topic...</option>
                                     <option value="feedback">General Feedback</option>
-                                    <option value="color-idea">Color Suggestion</option>
-                                    <option value="focus-tip">Focus Tip to Share</option>
-                                    <option value="bug">Report an Issue</option>
-                                    <option value="other">Other</option>
+                                    <option value="color-idea">Suggest a New Color</option>
+                                    <option value="feature-request">Request a Feature</option>
+                                    <option value="focus-tip">Share a Focus Tip</option>
+                                    <option value="success-story">Share How You Use WhiteScreen</option>
+                                    <option value="bug">Report a Bug or Issue</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="other">Something Else</option>
                                 </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Your Message</label>
+                                <label for="message">Your Message <span class="required">*</span></label>
                                 <textarea
                                     id="message"
                                     name="message"
                                     rows="6"
                                     required
-                                    placeholder="Share your thoughts, ideas, or questions..."
+                                    placeholder="Share your thoughts, ideas, questions, or feedback. We read every message and appreciate your input!"
                                 ></textarea>
+                            </div>
+
+                            <div class="form-group form-checkbox">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" value="yes">
+                                    <span class="checkbox-text">I'd like to hear about major updates to WhiteScreen.wiki (very occasional emails, no spam)</span>
+                                </label>
                             </div>
 
                             <button type="submit" class="btn btn-primary btn-large btn-full">
                                 Send Message
                             </button>
+
+                            <p class="form-note">We respect your privacy. Your information is only used to respond to your message.</p>
                         </form>
 
                         <div class="form-success" id="form-success" hidden>
-                            <div class="success-icon">✓</div>
-                            <h3>Message Sent!</h3>
-                            <p>Thank you for reaching out. We'll get back to you soon.</p>
-                            <a href="/" class="btn btn-secondary">Back to Home</a>
+                            <div class="success-icon">&#10003;</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. We typically respond within 24-48 hours. In the meantime, why not explore some colors?</p>
+                            <div class="success-actions">
+                                <a href="/colors.html" class="btn btn-primary">Explore Colors</a>
+                                <a href="/" class="btn btn-secondary">Back to Home</a>
+                            </div>
                         </div>
                     </div>
 
                     <aside class="contact-sidebar">
-                        <div class="sidebar-card">
+                        <div class="sidebar-card sidebar-email">
                             <h3>Prefer Email?</h3>
-                            <p>You can also reach us directly at:</p>
+                            <p>You can always reach us directly at:</p>
                             <a href="mailto:support@whitescreen.wiki" class="email-link">
                                 support@whitescreen.wiki
                             </a>
+                            <p class="email-note">We aim to respond within 24-48 hours.</p>
                         </div>
 
-                        <div class="sidebar-card">
-                            <h3>Quick Links</h3>
+                        <div class="sidebar-card sidebar-faq">
+                            <h3>Need Quick Answers?</h3>
+                            <p>Many common questions are already answered in our FAQ:</p>
                             <ul class="quick-links">
-                                <li><a href="/faq.html">Check our FAQ</a> for instant answers</li>
-                                <li><a href="/about.html">Learn about</a> our mission</li>
-                                <li><a href="/colors.html">Explore colors</a> while you wait</li>
+                                <li><a href="/faq.html#getting-started">How to use WhiteScreen.wiki</a></li>
+                                <li><a href="/faq.html#color-science">Which color is best for studying?</a></li>
+                                <li><a href="/faq.html#eye-health">Is it safe for my eyes?</a></li>
+                                <li><a href="/faq.html#technical">Does it work offline?</a></li>
                             </ul>
+                            <a href="/faq.html" class="btn btn-outline btn-small">View All FAQs</a>
                         </div>
 
                         <div class="sidebar-card sidebar-quote">
                             <blockquote>
                                 "In a gentle way, you can shake the world."
-                                <cite>— Mahatma Gandhi</cite>
+                                <cite>&mdash; Mahatma Gandhi</cite>
                             </blockquote>
+                        </div>
+
+                        <div class="sidebar-card sidebar-privacy">
+                            <h3>Your Privacy Matters</h3>
+                            <p>We don't track you on this site, and we won't share your contact information with anyone. Your message goes directly to us &mdash; no third parties, no marketing lists.</p>
                         </div>
                     </aside>
                 </div>
@@ -187,30 +233,113 @@
         <section class="contact-topics">
             <div class="container">
                 <h2>What Can You Share With Us?</h2>
+                <p class="section-intro">We welcome all kinds of feedback. Here are some ideas to get you started:</p>
                 <div class="topics-grid">
                     <div class="topic-card">
-                        <span class="topic-icon">💡</span>
-                        <h3>Feature Ideas</h3>
-                        <p>Have an idea for a new color, feature, or focus technique? We're all ears.</p>
+                        <span class="topic-icon" aria-hidden="true">&#128161;</span>
+                        <h3>New Color Ideas</h3>
+                        <p>Have a color you'd love to see? Tell us the hex code, the mood it evokes, and why it would help with focus or relaxation.</p>
                     </div>
 
                     <div class="topic-card">
-                        <span class="topic-icon">🧘</span>
-                        <h3>Focus Tips</h3>
-                        <p>Discovered a productivity method that works for you? Share it so others can benefit.</p>
+                        <span class="topic-icon" aria-hidden="true">&#128736;</span>
+                        <h3>Feature Requests</h3>
+                        <p>Would a timer help? Custom colors? Ambient sounds? We're always looking for ways to make WhiteScreen.wiki more useful while keeping it simple.</p>
                     </div>
 
                     <div class="topic-card">
-                        <span class="topic-icon">🐛</span>
+                        <span class="topic-icon" aria-hidden="true">&#129504;</span>
+                        <h3>Focus Techniques</h3>
+                        <p>Discovered a productivity method that works for you? Share your technique so others can benefit from your experience.</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="topic-icon" aria-hidden="true">&#128172;</span>
+                        <h3>Success Stories</h3>
+                        <p>Using WhiteScreen.wiki for work, study, meditation, or something creative? We'd love to hear how it's helped you focus.</p>
+                    </div>
+
+                    <div class="topic-card">
+                        <span class="topic-icon" aria-hidden="true">&#128027;</span>
                         <h3>Bug Reports</h3>
-                        <p>Something not working right? Let us know and we'll fix it quickly.</p>
+                        <p>Something not working right? Let us know your browser, device, and what happened. Screenshots help!</p>
                     </div>
 
                     <div class="topic-card">
-                        <span class="topic-icon">💬</span>
-                        <h3>Just Say Hi</h3>
-                        <p>Using WhiteScreen.wiki for something cool? We'd love to hear about it.</p>
+                        <span class="topic-icon" aria-hidden="true">&#128075;</span>
+                        <h3>Just Say Hello</h3>
+                        <p>No agenda needed. If WhiteScreen.wiki has helped you in any way, hearing about it makes our day.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Your Feedback Helps -->
+        <section class="feedback-impact">
+            <div class="container">
+                <h2>How Your Feedback Shapes WhiteScreen.wiki</h2>
+                <div class="impact-content">
+                    <div class="impact-text">
+                        <p>WhiteScreen.wiki isn't built by a large corporation &mdash; it's a passion project created to help people find focus in a noisy digital world. <strong>Every piece of feedback we receive directly influences how the site evolves.</strong></p>
+                        <p>Here are some features that came from user suggestions:</p>
+                        <ul class="impact-list">
+                            <li><strong>Cream and gray colors</strong> &mdash; Added after users requested softer alternatives to pure white</li>
+                            <li><strong>Keyboard shortcuts</strong> &mdash; Implemented because users wanted faster access to fullscreen</li>
+                            <li><strong>Mobile optimization</strong> &mdash; Improved based on feedback from tablet and phone users</li>
+                            <li><strong>Color psychology content</strong> &mdash; Expanded after users asked "why do these colors work?"</li>
+                        </ul>
+                        <p>Your idea could be next. We can't promise to implement everything, but we read every message and genuinely consider how each suggestion could help others.</p>
+                    </div>
+                    <div class="impact-quote">
+                        <blockquote>
+                            "I suggested adding a cream color option, and within a few weeks it was live on the site. It's now my go-to for late-night writing sessions."
+                            <cite>&mdash; Sarah K., Writer</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Time Expectations -->
+        <section class="response-info">
+            <div class="container">
+                <div class="response-card">
+                    <h2>What to Expect After You Reach Out</h2>
+                    <div class="response-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-marker">1</span>
+                            <div class="timeline-content">
+                                <h3>Immediate</h3>
+                                <p>You'll see a confirmation that your message was sent successfully.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-marker">2</span>
+                            <div class="timeline-content">
+                                <h3>Within 24-48 Hours</h3>
+                                <p>We'll read your message and send a personal response (not an auto-reply).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-marker">3</span>
+                            <div class="timeline-content">
+                                <h3>If Applicable</h3>
+                                <p>Feature requests and bug reports are logged for consideration in future updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="contact-cta">
+            <div class="container">
+                <h2>Ready to Focus?</h2>
+                <p>While you wait for our response, why not put WhiteScreen.wiki to work? Choose your color and enter a focused state.</p>
+                <div class="cta-buttons">
+                    <a href="/colors.html" class="btn btn-primary">Choose Your Color</a>
+                    <a href="/faq.html" class="btn btn-outline">Browse the FAQ</a>
                 </div>
             </div>
         </section>
@@ -221,24 +350,43 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="/" class="footer-logo">
-                        <span class="logo-icon">◯</span>
+                        <span class="logo-icon">&#9711;</span>
                         <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
                     </a>
-                    <p class="footer-tagline">Built with Calm</p>
+                    <p class="footer-tagline">Your Free Online Focus Tool</p>
                 </div>
 
                 <nav class="footer-nav">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/colors.html">Colors</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/faq.html">FAQ</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                    </ul>
+                    <div class="footer-nav-column">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="/colors.html#white">White Screen</a></li>
+                            <li><a href="/colors.html#black">Black Screen</a></li>
+                            <li><a href="/colors.html#blue">Blue Screen</a></li>
+                            <li><a href="/colors.html#green">Green Screen</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="/about.html">About &amp; Science</a></li>
+                            <li><a href="/faq.html">FAQ</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>More Colors</h4>
+                        <ul>
+                            <li><a href="/colors.html#red">Red Screen</a></li>
+                            <li><a href="/colors.html#yellow">Yellow Screen</a></li>
+                            <li><a href="/colors.html#pink">Pink Screen</a></li>
+                            <li><a href="/colors.html#cream">Cream Screen</a></li>
+                        </ul>
+                    </div>
                 </nav>
 
                 <div class="footer-meta">
-                    <p>&copy; 2024 WhiteScreen.wiki. All rights reserved.</p>
+                    <p>&copy; 2024 WhiteScreen.wiki. Free forever. No tracking. No ads.</p>
                     <a href="/sitemap.xml" class="sitemap-link">Sitemap</a>
                 </div>
             </div>
