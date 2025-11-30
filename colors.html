@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Screens – Choose Your Focus Color | WhiteScreen.wiki</title>
+    <meta name="description" content="Explore nine calming color screens for focus and relaxation. White, blue, green, black, and more. Each color supports different moods and productivity goals.">
+    <link rel="canonical" href="https://www.whitescreen.wiki/colors.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Color Screens – Choose Your Focus Color | WhiteScreen.wiki">
+    <meta property="og:description" content="Explore nine calming color screens for focus and relaxation. Find your perfect color for deep work, meditation, or creativity.">
+    <meta property="og:image" content="/assets/img/og-image.png">
+    <meta property="og:url" content="https://www.whitescreen.wiki/colors.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Color Screens – Choose Your Focus Color">
+    <meta name="twitter:description" content="Nine carefully selected colors for focus, calm, and creativity.">
+    <meta name="twitter:image" content="/assets/img/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Focus Color Screens",
+        "description": "A collection of calming color screens for focus and productivity",
+        "numberOfItems": 9,
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "White Screen", "description": "Clears mental noise and promotes clarity"},
+            {"@type": "ListItem", "position": 2, "name": "Blue Screen", "description": "Improves focus and calm"},
+            {"@type": "ListItem", "position": 3, "name": "Green Screen", "description": "Reduces anxiety and promotes balance"},
+            {"@type": "ListItem", "position": 4, "name": "Black Screen", "description": "Ideal for meditation and deep work"},
+            {"@type": "ListItem", "position": 5, "name": "Red Screen", "description": "Energizes and stimulates action"},
+            {"@type": "ListItem", "position": 6, "name": "Yellow Screen", "description": "Stimulates creativity and optimism"},
+            {"@type": "ListItem", "position": 7, "name": "Pink Screen", "description": "Boosts optimism and creativity"},
+            {"@type": "ListItem", "position": 8, "name": "Cream Screen", "description": "Warm comfort for gentle focus"},
+            {"@type": "ListItem", "position": 9, "name": "Gray Screen", "description": "Neutral backdrop for clear thinking"}
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Fullscreen Color Overlay -->
+    <div id="fullscreen-overlay" class="fullscreen-overlay" aria-hidden="true">
+        <button id="exit-fullscreen" class="exit-fullscreen-btn" aria-label="Exit fullscreen">
+            <span>×</span>
+            <small>Press ESC or click to exit</small>
+        </button>
+        <p class="fullscreen-tip">Take a deep breath. Focus on the present moment.</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo" aria-label="WhiteScreen.wiki Home">
+                <span class="logo-icon">◯</span>
+                <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/colors.html" class="active">Colors</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Choose Your Focus Color</h1>
+                <p class="page-intro">Click any color below to enter fullscreen mode. Each shade is carefully selected to support different mental states and productivity goals.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Color Grid -->
+        <section class="color-grid-section">
+            <div class="container">
+                <div class="color-grid" role="list" aria-label="Color selection grid">
+                    <div class="color-card" id="white" role="listitem">
+                        <button class="color-swatch" data-color="#ffffff" style="background-color: #ffffff; border: 1px solid #e0e0e0;" aria-label="Launch white screen fullscreen">
+                            <span class="color-label">White</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="blue" role="listitem">
+                        <button class="color-swatch" data-color="#1e90ff" style="background-color: #1e90ff;" aria-label="Launch blue screen fullscreen">
+                            <span class="color-label color-label-light">Blue</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="green" role="listitem">
+                        <button class="color-swatch" data-color="#32cd32" style="background-color: #32cd32;" aria-label="Launch green screen fullscreen">
+                            <span class="color-label">Green</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="black" role="listitem">
+                        <button class="color-swatch" data-color="#000000" style="background-color: #000000;" aria-label="Launch black screen fullscreen">
+                            <span class="color-label color-label-light">Black</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="red" role="listitem">
+                        <button class="color-swatch" data-color="#ff4b4b" style="background-color: #ff4b4b;" aria-label="Launch red screen fullscreen">
+                            <span class="color-label color-label-light">Red</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="yellow" role="listitem">
+                        <button class="color-swatch" data-color="#ffe600" style="background-color: #ffe600;" aria-label="Launch yellow screen fullscreen">
+                            <span class="color-label">Yellow</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="pink" role="listitem">
+                        <button class="color-swatch" data-color="#ffb6c1" style="background-color: #ffb6c1;" aria-label="Launch pink screen fullscreen">
+                            <span class="color-label">Pink</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="cream" role="listitem">
+                        <button class="color-swatch" data-color="#fffdd0" style="background-color: #fffdd0;" aria-label="Launch cream screen fullscreen">
+                            <span class="color-label">Cream</span>
+                        </button>
+                    </div>
+
+                    <div class="color-card" id="gray" role="listitem">
+                        <button class="color-swatch" data-color="#f2f2f2" style="background-color: #f2f2f2;" aria-label="Launch gray screen fullscreen">
+                            <span class="color-label">Gray</span>
+                        </button>
+                    </div>
+                </div>
+
+                <p class="color-instruction">Click any color to enter fullscreen. Press ESC to exit.</p>
+            </div>
+        </section>
+
+        <!-- Color Insights Section -->
+        <section class="color-insights">
+            <div class="container">
+                <h2>Understanding Each Color</h2>
+                <p class="section-intro">Color is a powerful tool for shaping your mental environment. Here's what research and practice tell us about each screen option.</p>
+
+                <div class="insights-list">
+                    <article class="insight-item" id="insight-white">
+                        <div class="insight-swatch" style="background-color: #ffffff; border: 1px solid #e0e0e0;"></div>
+                        <div class="insight-content">
+                            <h3>White Screen</h3>
+                            <p>White represents purity, clarity, and new beginnings. A white screen clears mental noise and creates a sense of spaciousness. It's like a blank page waiting for your ideas — perfect for writers, designers, and anyone seeking a fresh start to their workday.</p>
+                            <p><strong>Best for:</strong> Writing, brainstorming, creative work, morning routines</p>
+                            <button class="btn btn-small" data-color="#ffffff">Launch White Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-blue">
+                        <div class="insight-swatch" style="background-color: #1e90ff;"></div>
+                        <div class="insight-content">
+                            <h3>Blue Screen</h3>
+                            <p>Blue is scientifically linked to improved concentration and mental clarity. Research from the University of British Columbia found that blue environments enhance creative task performance. The color also has a calming effect on the nervous system, making it ideal for focused work.</p>
+                            <p><strong>Best for:</strong> Deep work sessions, studying, analytical tasks, video calls backdrop</p>
+                            <button class="btn btn-small" data-color="#1e90ff">Launch Blue Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-green">
+                        <div class="insight-swatch" style="background-color: #32cd32;"></div>
+                        <div class="insight-content">
+                            <h3>Green Screen</h3>
+                            <p>Green connects us to nature and promotes balance. It reduces anxiety, lowers eye strain, and supports sustained attention. Many programmers and developers prefer green screens for long coding sessions because the color is restful to the eyes and mind.</p>
+                            <p><strong>Best for:</strong> Coding, reading, extended work sessions, stress relief</p>
+                            <button class="btn btn-small" data-color="#32cd32">Launch Green Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-black">
+                        <div class="insight-swatch" style="background-color: #000000;"></div>
+                        <div class="insight-content">
+                            <h3>Black Screen</h3>
+                            <p>Black creates the ultimate distraction-free environment by eliminating all visual stimulation. It's ideal for meditation, reflection, and deep contemplative work. The darkness helps your mind turn inward and is especially useful for late-night focus sessions when bright screens can be jarring.</p>
+                            <p><strong>Best for:</strong> Meditation, reflection, night work, energy conservation</p>
+                            <button class="btn btn-small btn-dark" data-color="#000000">Launch Black Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-red">
+                        <div class="insight-swatch" style="background-color: #ff4b4b;"></div>
+                        <div class="insight-content">
+                            <h3>Red Screen</h3>
+                            <p>Red is an energizing, stimulating color that increases heart rate and activates the body. Use it sparingly for short bursts of energy and motivation. It's effective for powering through mundane tasks or when you need an extra push to get started.</p>
+                            <p><strong>Best for:</strong> Quick energy boosts, physical activity, overcoming procrastination</p>
+                            <button class="btn btn-small" data-color="#ff4b4b">Launch Red Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-yellow">
+                        <div class="insight-swatch" style="background-color: #ffe600;"></div>
+                        <div class="insight-content">
+                            <h3>Yellow Screen</h3>
+                            <p>Yellow stimulates mental activity and generates optimism. It's associated with creativity, confidence, and communication. Artists and designers often find yellow environments spark new ideas and help overcome creative blocks.</p>
+                            <p><strong>Best for:</strong> Creative ideation, positive mood boost, learning new concepts</p>
+                            <button class="btn btn-small" data-color="#ffe600">Launch Yellow Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-pink">
+                        <div class="insight-swatch" style="background-color: #ffb6c1;"></div>
+                        <div class="insight-content">
+                            <h3>Pink Screen</h3>
+                            <p>Pink is a nurturing, warm color that promotes feelings of love and compassion. It's calming like blue but with an added sense of warmth. Some studies suggest pink can reduce aggression and create a sense of safety and comfort.</p>
+                            <p><strong>Best for:</strong> Journaling, self-care breaks, creative writing, stress reduction</p>
+                            <button class="btn btn-small" data-color="#ffb6c1">Launch Pink Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-cream">
+                        <div class="insight-swatch" style="background-color: #fffdd0;"></div>
+                        <div class="insight-content">
+                            <h3>Cream Screen</h3>
+                            <p>Cream offers the clarity of white with added warmth. It's easier on the eyes than pure white and creates a cozy, inviting atmosphere. Think of it as the visual equivalent of warm lighting — softer and more comfortable for extended use.</p>
+                            <p><strong>Best for:</strong> Long reading sessions, evening work, comfortable focus</p>
+                            <button class="btn btn-small" data-color="#fffdd0">Launch Cream Screen</button>
+                        </div>
+                    </article>
+
+                    <article class="insight-item" id="insight-gray">
+                        <div class="insight-swatch" style="background-color: #f2f2f2;"></div>
+                        <div class="insight-content">
+                            <h3>Gray Screen</h3>
+                            <p>Gray is neutral and unobtrusive — the Switzerland of colors. It provides a calm backdrop that doesn't influence your mood in any particular direction, making it ideal when you need to think clearly without emotional coloring.</p>
+                            <p><strong>Best for:</strong> Neutral thinking, decision making, balanced assessment</p>
+                            <button class="btn btn-small" data-color="#f2f2f2">Launch Gray Screen</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn More CTA -->
+        <section class="learn-more-cta">
+            <div class="container">
+                <h2>Dive Deeper into Color Psychology</h2>
+                <p>Understanding how colors affect your mind can transform the way you work and rest. Our comprehensive guide explores the science behind color's impact on focus, creativity, and well-being.</p>
+                <a href="/about.html#color-psychology" class="btn btn-secondary">Read Our Color Psychology Guide →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon">◯</span>
+                        <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+                    </a>
+                    <p class="footer-tagline">Built with Calm</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/colors.html">Colors</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-meta">
+                    <p>&copy; 2024 WhiteScreen.wiki. All rights reserved.</p>
+                    <a href="/sitemap.xml" class="sitemap-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

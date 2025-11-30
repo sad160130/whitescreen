@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteScreen.wiki – Free Online Color Focus Tool for Calm and Clarity</title>
+    <meta name="description" content="Transform your browser into a distraction-free color screen. Switch between white, blue, green, and more to focus and relax. 100% free on WhiteScreen.wiki.">
+    <link rel="canonical" href="https://www.whitescreen.wiki/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="WhiteScreen.wiki – Focus Through Color">
+    <meta property="og:description" content="Choose from white, blue, green, or black screens to enhance focus and calm. Free online tool for deep work and relaxation.">
+    <meta property="og:image" content="/assets/img/og-image.png">
+    <meta property="og:url" content="https://www.whitescreen.wiki/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WhiteScreen.wiki – Focus Through Color">
+    <meta name="twitter:description" content="Choose from white, blue, green, or black screens to enhance focus and calm.">
+    <meta name="twitter:image" content="/assets/img/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WhiteScreen.wiki",
+        "url": "https://www.whitescreen.wiki/",
+        "description": "A free minimalist online color screen for focus and calm.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.whitescreen.wiki/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Fullscreen Color Overlay -->
+    <div id="fullscreen-overlay" class="fullscreen-overlay" aria-hidden="true">
+        <button id="exit-fullscreen" class="exit-fullscreen-btn" aria-label="Exit fullscreen">
+            <span>×</span>
+            <small>Press ESC or click to exit</small>
+        </button>
+        <p class="fullscreen-tip">Take a deep breath. Focus on the present moment.</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo" aria-label="WhiteScreen.wiki Home">
+                <span class="logo-icon">◯</span>
+                <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/colors.html">Colors</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Turn Your Screen Into a Distraction-Free Workspace</h1>
+                <p class="hero-subtitle">Choose a color that calms your mind and enhances focus — instantly.</p>
+
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large" data-color="#ffffff" aria-label="Launch white screen">
+                        Go White →
+                    </button>
+                </div>
+
+                <div class="color-quick-access">
+                    <p class="quick-access-label">Or try a different mood:</p>
+                    <div class="color-buttons">
+                        <a href="/colors.html#blue" class="color-btn" style="background-color: #1e90ff;" aria-label="Blue screen">Blue</a>
+                        <a href="/colors.html#green" class="color-btn" style="background-color: #32cd32;" aria-label="Green screen">Green</a>
+                        <a href="/colors.html#black" class="color-btn color-btn-dark" style="background-color: #000000;" aria-label="Black screen">Black</a>
+                        <a href="/colors.html#cream" class="color-btn" style="background-color: #fffdd0;" aria-label="Cream screen">Cream</a>
+                        <a href="/colors.html#pink" class="color-btn" style="background-color: #ffb6c1;" aria-label="Pink screen">Pink</a>
+                    </div>
+                </div>
+
+                <p class="hero-tagline">WhiteScreen.wiki — your calm, color-based focus companion.</p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <p class="section-intro">Each screen color supports different moods and productivity goals. Simply click a color to transform your entire browser into a distraction-free environment.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                                <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 8L40 40M40 8L8 40" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Instant Fullscreen Mode</h3>
+                        <p>One click transforms your browser into a pure, immersive color environment. No distractions, no clutter.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                                <circle cx="16" cy="16" r="6" fill="#1e90ff"/>
+                                <circle cx="32" cy="16" r="6" fill="#32cd32"/>
+                                <circle cx="16" cy="32" r="6" fill="#ffb6c1"/>
+                                <circle cx="32" cy="32" r="6" fill="#ffe600"/>
+                            </svg>
+                        </div>
+                        <h3>Multi-Color Screens</h3>
+                        <p>Choose from nine carefully selected colors, each designed to support specific mental states and tasks.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Focus-First UX</h3>
+                        <p>Minimalist design that gets out of your way. Your calm workspace is always just one click away.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                                <path d="M24 8L30 20H18L24 8Z" fill="currentColor"/>
+                                <path d="M24 40L18 28H30L24 40Z" fill="currentColor"/>
+                                <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Free Forever, No Ads</h3>
+                        <p>WhiteScreen.wiki will always be 100% free with no advertisements, trackers, or hidden costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Benefits Section -->
+        <section class="color-benefits">
+            <div class="container">
+                <h2>The Power of Color</h2>
+                <p class="section-intro">Color psychology research shows that different hues can significantly influence our mental state. Here's how each color screen can support your focus and well-being.</p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <span class="benefit-swatch" style="background-color: #ffffff; border: 1px solid #e0e0e0;"></span>
+                        <div class="benefit-content">
+                            <h3>White = Clarity</h3>
+                            <p>A blank canvas that clears mental noise and promotes fresh thinking. Ideal for writing, brainstorming, and starting new projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span class="benefit-swatch" style="background-color: #1e90ff;"></span>
+                        <div class="benefit-content">
+                            <h3>Blue = Focus</h3>
+                            <p>Studies show blue environments can improve concentration and productivity. Perfect for deep work sessions and analytical tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span class="benefit-swatch" style="background-color: #32cd32;"></span>
+                        <div class="benefit-content">
+                            <h3>Green = Balance</h3>
+                            <p>Nature's dominant color reduces anxiety and promotes harmony. Great for coding, reading, or when you need sustained attention.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span class="benefit-swatch" style="background-color: #000000;"></span>
+                        <div class="benefit-content">
+                            <h3>Black = Deep Work</h3>
+                            <p>Eliminates all visual stimulation for maximum immersion. Excellent for meditation, reflection, and late-night focus sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span class="benefit-swatch" style="background-color: #ffb6c1;"></span>
+                        <div class="benefit-content">
+                            <h3>Pink = Creativity</h3>
+                            <p>A warm, nurturing hue that sparks imagination and optimism. Wonderful for creative work, journaling, and artistic pursuits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-cta">
+                    <a href="/colors.html" class="btn btn-secondary">Explore All Colors →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Focus Tips Section -->
+        <section class="focus-tips">
+            <div class="container">
+                <h2>Simple Focus Techniques</h2>
+                <p class="section-intro">Combine color screens with these proven methods to maximize your productivity and calm.</p>
+
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <span class="tip-number">1</span>
+                        <h3>The Blue Breath</h3>
+                        <p>Before starting a writing session, spend five minutes on the blue screen. Breathe deeply and let your thoughts settle. This primes your mind for focused, creative work.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <span class="tip-number">2</span>
+                        <h3>The Green Break</h3>
+                        <p>After 45 minutes of work, switch to the green screen for a 3-minute eye rest. Look at the screen, blink slowly, and let the calming color refresh your visual system.</p>
+                    </div>
+
+                    <div class="tip-card">
+                        <span class="tip-number">3</span>
+                        <h3>The Black Reset</h3>
+                        <p>When feeling overwhelmed, enter the black screen fullscreen mode. Close your eyes for one minute, then open them to the darkness. This mental reset can restore clarity.</p>
+                    </div>
+                </div>
+
+                <div class="tips-cta">
+                    <a href="/about.html#color-psychology" class="link-arrow">Learn more about color psychology →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What People Say</h2>
+
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"I use WhiteScreen.wiki's green mode for coding sprints — it's surprisingly relaxing. My eyes feel better after long sessions."</p>
+                        <cite>— Alex, Software Developer</cite>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"The white screen has become my morning ritual. I open it while journaling, and it feels like a fresh page every time."</p>
+                        <cite>— Maria, Writer</cite>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"Finally, a focus tool that doesn't try to sell me anything. Just pure, simple calm. I recommend the blue screen for study sessions."</p>
+                        <cite>— Jordan, Graduate Student</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Ready to Find Your Focus?</h2>
+                <p>Choose your color and transform your workspace in seconds.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" data-color="#ffffff" aria-label="Launch white screen">
+                        Start with White
+                    </button>
+                    <a href="/colors.html" class="btn btn-outline btn-large">Browse All Colors</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon">◯</span>
+                        <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+                    </a>
+                    <p class="footer-tagline">Built with Calm</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/colors.html">Colors</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-meta">
+                    <p>&copy; 2024 WhiteScreen.wiki. All rights reserved.</p>
+                    <a href="/sitemap.xml" class="sitemap-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

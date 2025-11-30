@@ -1,0 +1,11 @@
+# robots.txt for WhiteScreen.wiki
+# Allow all crawlers to access all pages
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.whitescreen.wiki/sitemap.xml
+
+# Crawl-delay (optional, respectful to server)
+Crawl-delay: 1
