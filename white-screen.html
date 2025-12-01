@@ -127,20 +127,66 @@
     </header>
 
     <main>
-        <!-- Hero Section with Color Display -->
+        <!-- Hero Section -->
         <section class="color-hero color-hero-white">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>White Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen white display for focus, lighting, and screen testing</p>
-                    <button class="btn btn-launch btn-launch-white" data-color="#ffffff" aria-label="Launch fullscreen white display">
-                        Launch White Screen
+                <h1>White Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen white display for focus, lighting, and screen testing</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#ffffff">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                    <button class="preview-fullscreen-btn preview-btn-white">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
                     </button>
-                    <p class="color-hero-hint">Click to display full white screen &bull; Press ESC to exit</p>
+                    <span class="current-hex">#FFFFFF</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
-                        <span class="preview-label">Preview</span>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#9728;</span>
+                                Adjust Brightness
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust white screen brightness">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">25%</button>
+                        <button class="shade-preset" data-shade="50">50%</button>
+                        <button class="shade-preset" data-shade="75">75%</button>
+                        <button class="shade-preset active" data-shade="100">100%</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#FFFFFF</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">255, 255, 255</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">100%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Pure White</div>
+                        <div class="preview-stat-label">Color Name</div>
                     </div>
                 </div>
             </div>

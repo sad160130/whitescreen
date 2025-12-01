@@ -47,16 +47,67 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="color-hero color-hero-pink">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Pink Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen pink display for relaxation, stress relief, and gentle nurturing focus</p>
-                    <button class="btn btn-launch" data-color="#ffb6c1" aria-label="Launch fullscreen pink display">Launch Pink Screen</button>
-                    <p class="color-hero-hint">Click to display full pink screen &bull; Press ESC to exit</p>
+                <h1>Pink Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen pink display for relaxation, stress relief, and gentle nurturing focus</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#ffb6c1">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display" style="background-color: #ffb6c1;">
+                    <button class="preview-fullscreen-btn preview-btn-pink">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
+                    </button>
+                    <span class="current-hex">#FFB6C1</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #ffb6c1;"><span class="preview-label">Preview</span></div>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#128150;</span>
+                                Adjust Pink Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust pink screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Rose</button>
+                        <button class="shade-preset" data-shade="50">Medium</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Soft Pink</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#FFB6C1</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">255, 182, 193</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">86%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Light Pink</div>
+                        <div class="preview-stat-label">Color Name</div>
+                    </div>
                 </div>
             </div>
         </section>

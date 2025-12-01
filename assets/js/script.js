@@ -11,7 +11,8 @@
     // Constants & Configuration
     // ==========================================================================
     const STORAGE_KEY = 'whitescreen_last_color';
-    const DARK_COLORS = ['#000000', '#1e90ff', '#ff4b4b'];
+    const BRIGHTNESS_KEY = 'whitescreen_brightness';
+    const DARK_COLORS = ['#000000', '#1e90ff', '#ff4b4b', '#cc0000', '#228b22', '#1a472a'];
 
     // Color definitions for validation
     const VALID_COLORS = {
@@ -23,8 +24,29 @@
         yellow: '#ffe600',
         pink: '#ffb6c1',
         cream: '#fffdd0',
-        gray: '#f2f2f2'
+        gray: '#808080'
     };
+
+    // Base colors for each screen (used for brightness adjustment)
+    const BASE_COLORS = {
+        '#ffffff': { h: 0, s: 0, l: 100 },      // White
+        '#000000': { h: 0, s: 0, l: 0 },        // Black
+        '#1e90ff': { h: 210, s: 100, l: 56 },   // Blue
+        '#0066cc': { h: 210, s: 100, l: 40 },   // Blue alt
+        '#32cd32': { h: 120, s: 61, l: 50 },    // Green
+        '#228b22': { h: 120, s: 61, l: 34 },    // Forest Green
+        '#ff4b4b': { h: 0, s: 100, l: 65 },     // Red
+        '#cc0000': { h: 0, s: 100, l: 40 },     // Dark Red
+        '#ffe600': { h: 54, s: 100, l: 50 },    // Yellow
+        '#ffb6c1': { h: 351, s: 100, l: 86 },   // Pink
+        '#fffdd0': { h: 55, s: 100, l: 91 },    // Cream
+        '#808080': { h: 0, s: 0, l: 50 },       // Gray
+        '#f2f2f2': { h: 0, s: 0, l: 95 }        // Light Gray
+    };
+
+    // Current state
+    let currentBaseColor = null;
+    let currentBrightness = 100;
 
     // ==========================================================================
     // DOM Elements
@@ -44,7 +66,80 @@
      * @returns {boolean}
      */
     function isDarkColor(hexColor) {
-        return DARK_COLORS.includes(hexColor.toLowerCase());
+        // Check against known dark colors
+        if (DARK_COLORS.includes(hexColor.toLowerCase())) return true;
+
+        // Calculate luminance for dynamic colors
+        const rgb = hexToRgb(hexColor);
+        if (rgb) {
+            const luminance = (0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b) / 255;
+            return luminance < 0.5;
+        }
+        return false;
+    }
+
+    /**
+     * Convert hex to RGB
+     * @param {string} hex - Hex color code
+     * @returns {object|null}
+     */
+    function hexToRgb(hex) {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+    }
+
+    /**
+     * Convert HSL to Hex
+     * @param {number} h - Hue (0-360)
+     * @param {number} s - Saturation (0-100)
+     * @param {number} l - Lightness (0-100)
+     * @returns {string}
+     */
+    function hslToHex(h, s, l) {
+        s /= 100;
+        l /= 100;
+        const a = s * Math.min(l, 1 - l);
+        const f = n => {
+            const k = (n + h / 30) % 12;
+            const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+            return Math.round(255 * color).toString(16).padStart(2, '0');
+        };
+        return `#${f(0)}${f(8)}${f(4)}`;
+    }
+
+    /**
+     * Adjust color brightness
+     * @param {string} baseColor - Base hex color
+     * @param {number} brightness - Brightness percentage (0-100)
+     * @returns {string}
+     */
+    function adjustColorBrightness(baseColor, brightness) {
+        const base = BASE_COLORS[baseColor.toLowerCase()];
+        if (!base) return baseColor;
+
+        // For black, we adjust lightness from 0 towards gray
+        if (baseColor.toLowerCase() === '#000000') {
+            const newL = Math.min(30, (brightness / 100) * 30);
+            return hslToHex(base.h, base.s, newL);
+        }
+
+        // For white, we adjust lightness from 100 downwards
+        if (baseColor.toLowerCase() === '#ffffff') {
+            const newL = Math.max(50, 50 + (brightness / 100) * 50);
+            return hslToHex(base.h, base.s, newL);
+        }
+
+        // For other colors, adjust lightness proportionally
+        const minL = Math.max(10, base.l - 40);
+        const maxL = Math.min(95, base.l + 30);
+        const range = maxL - minL;
+        const newL = minL + (brightness / 100) * range;
+
+        return hslToHex(base.h, base.s, newL);
     }
 
     /**
@@ -60,6 +155,18 @@
     }
 
     /**
+     * Save brightness preference to localStorage
+     * @param {number} brightness - Brightness value
+     */
+    function saveBrightnessPreference(brightness) {
+        try {
+            localStorage.setItem(BRIGHTNESS_KEY, brightness.toString());
+        } catch (e) {
+            // localStorage not available, fail silently
+        }
+    }
+
+    /**
      * Get saved color preference
      * @returns {string|null}
      */
@@ -68,6 +175,19 @@
             return localStorage.getItem(STORAGE_KEY);
         } catch (e) {
             return null;
+        }
+    }
+
+    /**
+     * Get saved brightness preference
+     * @returns {number}
+     */
+    function getSavedBrightness() {
+        try {
+            const saved = localStorage.getItem(BRIGHTNESS_KEY);
+            return saved ? parseInt(saved, 10) : 100;
+        } catch (e) {
+            return 100;
         }
     }
 
@@ -87,15 +207,23 @@
     /**
      * Enter fullscreen color mode
      * @param {string} color - Hex color code
+     * @param {number} brightness - Brightness level (optional)
      */
-    function enterFullscreenMode(color) {
+    function enterFullscreenMode(color, brightness) {
         if (!fullscreenOverlay || !isValidHexColor(color)) return;
 
+        // Store base color
+        currentBaseColor = color;
+        currentBrightness = brightness !== undefined ? brightness : getSavedBrightness();
+
+        // Calculate adjusted color
+        const adjustedColor = adjustColorBrightness(color, currentBrightness);
+
         // Set background color
-        fullscreenOverlay.style.backgroundColor = color;
+        fullscreenOverlay.style.backgroundColor = adjustedColor;
 
         // Toggle dark mode class for light text
-        if (isDarkColor(color)) {
+        if (isDarkColor(adjustedColor)) {
             fullscreenOverlay.classList.add('dark-mode');
         } else {
             fullscreenOverlay.classList.remove('dark-mode');
@@ -111,9 +239,31 @@
 
         // Save preference
         saveColorPreference(color);
+        saveBrightnessPreference(currentBrightness);
 
         // Update tip message
         updateFullscreenTip(color);
+    }
+
+    /**
+     * Update fullscreen color based on brightness change
+     * @param {number} brightness - New brightness value
+     */
+    function updateFullscreenBrightness(brightness) {
+        if (!fullscreenOverlay || !currentBaseColor) return;
+
+        currentBrightness = brightness;
+        const adjustedColor = adjustColorBrightness(currentBaseColor, brightness);
+        fullscreenOverlay.style.backgroundColor = adjustedColor;
+
+        // Toggle dark mode class based on new color
+        if (isDarkColor(adjustedColor)) {
+            fullscreenOverlay.classList.add('dark-mode');
+        } else {
+            fullscreenOverlay.classList.remove('dark-mode');
+        }
+
+        saveBrightnessPreference(brightness);
     }
 
     /**
@@ -426,6 +576,117 @@
     }
 
     // ==========================================================================
+    // Interactive Color Preview Panel
+    // ==========================================================================
+
+    /**
+     * Initialize interactive color preview panel
+     */
+    function initInteractivePreview() {
+        const previewPanel = document.querySelector('.interactive-preview-panel');
+        if (!previewPanel) return;
+
+        const colorPreview = previewPanel.querySelector('.color-preview-display');
+        const brightnessSlider = previewPanel.querySelector('.brightness-slider');
+        const brightnessValue = previewPanel.querySelector('.brightness-value');
+        const fullscreenBtn = previewPanel.querySelector('.preview-fullscreen-btn');
+        const baseColor = previewPanel.dataset.baseColor;
+
+        if (!baseColor) return;
+
+        // Set initial brightness from saved preference or default
+        let currentPreviewBrightness = getSavedBrightness();
+        if (brightnessSlider) {
+            brightnessSlider.value = currentPreviewBrightness;
+        }
+        if (brightnessValue) {
+            brightnessValue.textContent = currentPreviewBrightness + '%';
+        }
+
+        // Set initial preview color
+        updatePreviewColor(colorPreview, baseColor, currentPreviewBrightness);
+
+        // Handle brightness slider changes
+        if (brightnessSlider) {
+            brightnessSlider.addEventListener('input', function() {
+                currentPreviewBrightness = parseInt(this.value, 10);
+                if (brightnessValue) {
+                    brightnessValue.textContent = currentPreviewBrightness + '%';
+                }
+                updatePreviewColor(colorPreview, baseColor, currentPreviewBrightness);
+
+                // If fullscreen is active, update it too
+                if (fullscreenOverlay && fullscreenOverlay.classList.contains('active')) {
+                    updateFullscreenBrightness(currentPreviewBrightness);
+                }
+            });
+        }
+
+        // Handle fullscreen button click
+        if (fullscreenBtn) {
+            fullscreenBtn.addEventListener('click', function() {
+                enterFullscreenMode(baseColor, currentPreviewBrightness);
+            });
+        }
+
+        // Handle click on preview area to go fullscreen
+        if (colorPreview) {
+            colorPreview.addEventListener('click', function(e) {
+                // Don't trigger if clicking on the button inside
+                if (e.target.closest('.preview-fullscreen-btn')) return;
+                enterFullscreenMode(baseColor, currentPreviewBrightness);
+            });
+        }
+
+        // Handle preset shade buttons
+        const shadePresets = previewPanel.querySelectorAll('.shade-preset');
+        shadePresets.forEach(preset => {
+            preset.addEventListener('click', function() {
+                const shadeValue = parseInt(this.dataset.shade, 10);
+                currentPreviewBrightness = shadeValue;
+
+                if (brightnessSlider) {
+                    brightnessSlider.value = shadeValue;
+                }
+                if (brightnessValue) {
+                    brightnessValue.textContent = shadeValue + '%';
+                }
+                updatePreviewColor(colorPreview, baseColor, shadeValue);
+
+                // Update active state
+                shadePresets.forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }
+
+    /**
+     * Update preview color display
+     * @param {HTMLElement} element - Preview element
+     * @param {string} baseColor - Base hex color
+     * @param {number} brightness - Brightness percentage
+     */
+    function updatePreviewColor(element, baseColor, brightness) {
+        if (!element) return;
+
+        const adjustedColor = adjustColorBrightness(baseColor, brightness);
+        element.style.backgroundColor = adjustedColor;
+
+        // Update the hex display if present
+        const hexDisplay = element.querySelector('.current-hex');
+        if (hexDisplay) {
+            hexDisplay.textContent = adjustedColor.toUpperCase();
+        }
+
+        // Toggle dark mode for text visibility
+        if (isDarkColor(adjustedColor)) {
+            element.classList.add('dark-preview');
+        } else {
+            element.classList.remove('dark-preview');
+        }
+    }
+
+    // ==========================================================================
     // Initialization
     // ==========================================================================
 
@@ -481,6 +742,9 @@
 
         // Initialize scroll animations
         initScrollAnimations();
+
+        // Initialize interactive preview panel
+        initInteractivePreview();
 
         // Click outside to close overlay (on the overlay itself, not content)
         if (fullscreenOverlay) {

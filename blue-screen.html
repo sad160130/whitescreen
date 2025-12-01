@@ -130,17 +130,63 @@
         <!-- Hero Section -->
         <section class="color-hero color-hero-blue">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Blue Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen blue display for focus, creativity, and calm concentration</p>
-                    <button class="btn btn-launch btn-launch-dark" data-color="#1e90ff" aria-label="Launch fullscreen blue display">
-                        Launch Blue Screen
+                <h1>Blue Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen blue display for focus, creativity, and calm concentration</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#1e90ff">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display dark-preview" style="background-color: #1e90ff;">
+                    <button class="preview-fullscreen-btn preview-btn-blue">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
                     </button>
-                    <p class="color-hero-hint">Click to display full blue screen &bull; Press ESC to exit</p>
+                    <span class="current-hex">#1E90FF</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #1e90ff;">
-                        <span class="preview-label preview-label-dark">Preview</span>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#9728;</span>
+                                Adjust Blue Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust blue screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Deep Blue</button>
+                        <button class="shade-preset" data-shade="50">Medium</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Bright</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#1E90FF</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">30, 144, 255</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">56%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Dodger Blue</div>
+                        <div class="preview-stat-label">Color Name</div>
                     </div>
                 </div>
             </div>

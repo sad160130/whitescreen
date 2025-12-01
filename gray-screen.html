@@ -47,16 +47,67 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="color-hero color-hero-gray">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Gray Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen neutral gray display for calibration, visual rest, and creating a balanced environment</p>
-                    <button class="btn btn-launch" data-color="#808080" aria-label="Launch fullscreen gray display">Launch Gray Screen</button>
-                    <p class="color-hero-hint">Click to display full gray screen &bull; Press ESC to exit</p>
+                <h1>Gray Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen neutral gray display for calibration, visual rest, and creating a balanced environment</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#808080">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display" style="background-color: #808080;">
+                    <button class="preview-fullscreen-btn preview-btn-gray">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
+                    </button>
+                    <span class="current-hex">#808080</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #808080;"><span class="preview-label preview-label-dark">Preview</span></div>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#127912;</span>
+                                Adjust Gray Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust gray screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Dark Gray</button>
+                        <button class="shade-preset" data-shade="50">50% Gray</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Medium</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#808080</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">128, 128, 128</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">50%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Neutral Gray</div>
+                        <div class="preview-stat-label">Color Name</div>
+                    </div>
                 </div>
             </div>
         </section>

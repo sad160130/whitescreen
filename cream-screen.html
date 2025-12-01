@@ -47,16 +47,67 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="color-hero color-hero-cream">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Cream Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen cream display for comfortable reading, eye comfort, and warm ambient lighting</p>
-                    <button class="btn btn-launch" data-color="#fffdd0" aria-label="Launch fullscreen cream display">Launch Cream Screen</button>
-                    <p class="color-hero-hint">Click to display full cream screen &bull; Press ESC to exit</p>
+                <h1>Cream Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen cream display for comfortable reading, eye comfort, and warm ambient lighting</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#fffdd0">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display" style="background-color: #fffdd0;">
+                    <button class="preview-fullscreen-btn preview-btn-cream">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
+                    </button>
+                    <span class="current-hex">#FFFDD0</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #fffdd0;"><span class="preview-label">Preview</span></div>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#128214;</span>
+                                Adjust Cream Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust cream screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Sepia</button>
+                        <button class="shade-preset" data-shade="50">Warm</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Soft Cream</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#FFFDD0</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">255, 253, 208</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">91%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Lemon Chiffon</div>
+                        <div class="preview-stat-label">Color Name</div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -47,16 +47,67 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="color-hero color-hero-yellow">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Yellow Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen yellow display for optimism, mental energy, and overcoming creative blocks</p>
-                    <button class="btn btn-launch" data-color="#ffe600" aria-label="Launch fullscreen yellow display">Launch Yellow Screen</button>
-                    <p class="color-hero-hint">Click to display full yellow screen &bull; Press ESC to exit</p>
+                <h1>Yellow Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen yellow display for optimism, mental energy, and overcoming creative blocks</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#ffe600">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display" style="background-color: #ffe600;">
+                    <button class="preview-fullscreen-btn preview-btn-yellow">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
+                    </button>
+                    <span class="current-hex">#FFE600</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #ffe600;"><span class="preview-label">Preview</span></div>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#9728;</span>
+                                Adjust Yellow Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust yellow screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Gold</button>
+                        <button class="shade-preset" data-shade="50">Medium</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Bright</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#FFE600</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">255, 230, 0</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">90%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Pure Yellow</div>
+                        <div class="preview-stat-label">Color Name</div>
+                    </div>
                 </div>
             </div>
         </section>

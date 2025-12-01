@@ -127,20 +127,66 @@
     </header>
 
     <main>
-        <!-- Hero Section with Color Display -->
+        <!-- Hero Section -->
         <section class="color-hero color-hero-black">
             <div class="container">
-                <div class="color-hero-content">
-                    <h1>Black Screen Online</h1>
-                    <p class="color-hero-subtitle">Free full-screen dark display for meditation, OLED testing, and creating a calm environment</p>
-                    <button class="btn btn-launch btn-launch-dark" data-color="#000000" aria-label="Launch fullscreen black display">
-                        Launch Black Screen
+                <h1>Black Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen dark display for meditation, OLED testing, and creating a calm environment</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#000000">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display dark-preview" style="background-color: #000000;">
+                    <button class="preview-fullscreen-btn preview-btn-black">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
                     </button>
-                    <p class="color-hero-hint">Click to display full black screen &bull; Press ESC to exit</p>
+                    <span class="current-hex">#000000</span>
+                    <span class="preview-click-hint">Click anywhere or press the button</span>
                 </div>
-                <div class="color-hero-preview">
-                    <div class="color-preview-box" style="background-color: #000000;">
-                        <span class="preview-label preview-label-dark">Preview</span>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#127769;</span>
+                                Adjust Darkness Level
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust black screen darkness">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">25%</button>
+                        <button class="shade-preset" data-shade="50">50%</button>
+                        <button class="shade-preset" data-shade="75">75%</button>
+                        <button class="shade-preset active" data-shade="100">100% Dark</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#000000</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">0, 0, 0</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">0%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Pure Black</div>
+                        <div class="preview-stat-label">Color Name</div>
                     </div>
                 </div>
             </div>
