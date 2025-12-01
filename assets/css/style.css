@@ -3204,17 +3204,7 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: all var(--transition-normal);
-}
-
-.color-preview-display:hover {
-    filter: brightness(1.02);
-}
-
-.color-preview-display:hover .preview-fullscreen-btn {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Fullscreen Button in Preview */

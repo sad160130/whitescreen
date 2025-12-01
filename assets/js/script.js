@@ -622,18 +622,10 @@
             });
         }
 
-        // Handle fullscreen button click
+        // Handle fullscreen button click (only the button triggers fullscreen, not the entire preview area)
         if (fullscreenBtn) {
-            fullscreenBtn.addEventListener('click', function() {
-                enterFullscreenMode(baseColor, currentPreviewBrightness);
-            });
-        }
-
-        // Handle click on preview area to go fullscreen
-        if (colorPreview) {
-            colorPreview.addEventListener('click', function(e) {
-                // Don't trigger if clicking on the button inside
-                if (e.target.closest('.preview-fullscreen-btn')) return;
+            fullscreenBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
                 enterFullscreenMode(baseColor, currentPreviewBrightness);
             });
         }
