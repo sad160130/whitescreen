@@ -686,6 +686,13 @@
      * Initialize all functionality
      */
     function init() {
+        // Ensure fullscreen overlay is hidden on page load
+        if (fullscreenOverlay) {
+            fullscreenOverlay.classList.remove('active');
+            fullscreenOverlay.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
         // Color button click handlers
         document.addEventListener('click', handleColorClick);
 
