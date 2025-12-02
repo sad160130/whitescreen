@@ -2573,6 +2573,31 @@ strong {
     color: #ffffff;
 }
 
+.color-hero-cyan {
+    background: linear-gradient(135deg, #008b8b 0%, #00ffff 100%);
+    color: #003333;
+}
+
+.color-hero-orange {
+    background: linear-gradient(135deg, #cc5500 0%, #ff8c00 100%);
+    color: #ffffff;
+}
+
+.color-hero-purple {
+    background: linear-gradient(135deg, #4b0082 0%, #9370db 100%);
+    color: #ffffff;
+}
+
+.color-hero-brown {
+    background: linear-gradient(135deg, #3d2314 0%, #8b4513 100%);
+    color: #ffffff;
+}
+
+.color-hero-teal {
+    background: linear-gradient(135deg, #004d4d 0%, #008b8b 100%);
+    color: #ffffff;
+}
+
 /* Launch Buttons */
 .btn-launch {
     padding: var(--space-lg) var(--space-2xl);
