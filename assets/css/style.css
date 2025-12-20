@@ -2648,6 +2648,31 @@ strong {
     color: #ffffff;
 }
 
+.color-hero-magenta {
+    background: linear-gradient(135deg, #cc00cc 0%, #FF00FF 100%);
+    color: #ffffff;
+}
+
+.color-hero-olive {
+    background: linear-gradient(135deg, #404000 0%, #808000 100%);
+    color: #ffffff;
+}
+
+.color-hero-salmon {
+    background: linear-gradient(135deg, #e06050 0%, #FA8072 100%);
+    color: #333333;
+}
+
+.color-hero-slate {
+    background: linear-gradient(135deg, #4a5a6a 0%, #708090 100%);
+    color: #ffffff;
+}
+
+.color-hero-lime {
+    background: linear-gradient(135deg, #00cc00 0%, #00FF00 100%);
+    color: #333333;
+}
+
 /* Launch Buttons */
 .btn-launch {
     padding: var(--space-lg) var(--space-2xl);
