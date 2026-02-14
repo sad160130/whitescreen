@@ -408,18 +408,26 @@
     function initFaqAccordion() {
         const faqQuestions = document.querySelectorAll('.faq-question');
 
+        // Helper to find answer element (supports both aria-controls and sibling lookup)
+        function getAnswerElement(questionBtn) {
+            const answerId = questionBtn.getAttribute('aria-controls');
+            if (answerId) {
+                return document.getElementById(answerId);
+            }
+            // Fallback: find sibling .faq-answer element
+            return questionBtn.nextElementSibling;
+        }
+
         faqQuestions.forEach(question => {
             question.addEventListener('click', function() {
                 const expanded = this.getAttribute('aria-expanded') === 'true';
-                const answerId = this.getAttribute('aria-controls');
-                const answer = document.getElementById(answerId);
+                const answer = getAnswerElement(this);
 
                 // Close all other answers
                 faqQuestions.forEach(q => {
                     if (q !== this) {
                         q.setAttribute('aria-expanded', 'false');
-                        const otherAnswerId = q.getAttribute('aria-controls');
-                        const otherAnswer = document.getElementById(otherAnswerId);
+                        const otherAnswer = getAnswerElement(q);
                         if (otherAnswer) {
                             otherAnswer.hidden = true;
                         }
