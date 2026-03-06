@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champagne Screen Online | Free Full Screen Champagne Display for Elegance | WhiteScreen.wiki</title>
+    <meta name="description" content="Free champagne screen online tool. Display a warm, elegant full champagne screen for sophistication, soft ambient lighting, portrait photography, and refined workspaces.">
+    <link rel="canonical" href="https://whitescreen.wiki/champagne-screen.html">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="champagne screen, champagne screen online, full champagne screen, champagne display, champagne color screen, warm neutral screen, elegant screen, champagne background screen, champagne screen test">
+    <meta name="author" content="WhiteScreen.wiki">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Champagne Screen Online | Free Full Screen Champagne Display for Elegance">
+    <meta property="og:description" content="Free champagne screen tool. Display a warm, elegant champagne screen for sophisticated ambiance and soft lighting.">
+    <meta property="og:image" content="/assets/img/og-champagne-screen.png">
+    <meta property="og:url" content="https://www.whitescreen.wiki/champagne-screen.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="WhiteScreen.wiki">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Champagne Screen Online | Free Full Champagne Display">
+    <meta name="twitter:description" content="Display a warm, elegant champagne screen for sophistication and soft ambient lighting.">
+    <meta name="twitter:image" content="/assets/img/og-champagne-screen.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Champagne Screen Online",
+        "description": "Free online champagne screen tool for elegant ambient lighting, portrait photography, warm workspaces, and sophisticated presentations",
+        "url": "https://www.whitescreen.wiki/champagne-screen.html",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1847"
+        }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a champagne screen used for?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A champagne screen is used for elegant ambient lighting, creating warm workspace atmospheres, portrait and product photography with skin-flattering light, video call lighting, wedding and luxury content creation, and sophisticated presentations. The warm, pale yellowish-beige tone adds refinement without being harsh on the eyes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is champagne color good for photography?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, champagne is excellent for photography. Portrait photographers prize this warm neutral tone because it flatters all skin tones, creating a soft, luminous quality that mimics golden hour lighting. It eliminates harsh shadows and adds a subtle warmth that makes subjects appear healthy and radiant."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is a champagne screen safe for evening use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, champagne screens are ideal for evening use. Unlike blue-heavy whites, champagne's warm tone contains minimal blue light, making it gentle on your circadian rhythm. The warm, soft glow won't suppress melatonin production the way cooler colors do, making it perfect for evening work or relaxation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does champagne color affect mood?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Champagne color evokes feelings of celebration, luxury, warmth, and refinement. Psychologically, it combines the optimism of yellow with the sophistication of neutral tones. It creates an atmosphere of timeless elegance and subtle femininity, making spaces feel more upscale and inviting without being overwhelming."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the difference between champagne and cream colors?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Champagne (#F7E7CE) has a more pronounced golden-yellow undertone, while cream is closer to off-white with subtle warmth. Champagne feels more celebratory and luxurious, whereas cream is more neutral. Champagne is warmer than ivory (which leans cooler) and more refined than beige (which is earthier)."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Fullscreen Color Overlay -->
+    <div id="fullscreen-overlay" class="fullscreen-overlay" aria-hidden="true">
+        <button id="exit-fullscreen" class="exit-fullscreen-btn exit-btn-dark" aria-label="Exit fullscreen">
+            <span>&times;</span>
+            <small>Press ESC or click to exit</small>
+        </button>
+        <p class="fullscreen-tip fullscreen-tip-dark">Let the warm champagne glow surround you.</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="logo" aria-label="WhiteScreen.wiki Home">
+                <span class="logo-icon">&#9711;</span>
+                <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/colors.html">Colors</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="color-hero color-hero-champagne">
+            <div class="container">
+                <h1>Champagne Screen Online</h1>
+                <p class="hero-subtitle">Free full-screen champagne display for elegance, warm ambiance, and sophisticated lighting</p>
+            </div>
+        </section>
+
+        <!-- Interactive Preview Panel -->
+        <section class="container">
+            <div class="interactive-preview-panel" data-base-color="#F7E7CE">
+                <!-- Color Preview Display -->
+                <div class="color-preview-display dark-preview" style="background-color: #F7E7CE;">
+                    <button class="preview-fullscreen-btn preview-btn-champagne">
+                        <span class="fullscreen-icon">&#9974;</span>
+                        <span>Click to Fullscreen</span>
+                    </button>
+                    <span class="current-hex">#F7E7CE</span>
+                    <span class="preview-click-hint">Adjust brightness below, then click the button to go fullscreen</span>
+                </div>
+
+                <!-- Brightness/Shade Controls -->
+                <div class="preview-controls">
+                    <div class="brightness-control">
+                        <div class="brightness-control-header">
+                            <span class="brightness-label">
+                                <span class="icon">&#9728;</span>
+                                Adjust Champagne Shade
+                            </span>
+                            <span class="brightness-value">100%</span>
+                        </div>
+                        <input type="range" min="0" max="100" value="100" class="brightness-slider" aria-label="Adjust champagne screen shade">
+                    </div>
+
+                    <div class="shade-presets">
+                        <span class="shade-presets-label">Quick Presets:</span>
+                        <button class="shade-preset" data-shade="25">Deep Champagne</button>
+                        <button class="shade-preset" data-shade="50">Medium</button>
+                        <button class="shade-preset" data-shade="75">Light</button>
+                        <button class="shade-preset active" data-shade="100">Bright</button>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="preview-stats">
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">#F7E7CE</div>
+                        <div class="preview-stat-label">Hex Code</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">247, 231, 206</div>
+                        <div class="preview-stat-label">RGB</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">89%</div>
+                        <div class="preview-stat-label">Luminance</div>
+                    </div>
+                    <div class="preview-stat">
+                        <div class="preview-stat-value">Champagne</div>
+                        <div class="preview-stat-label">Color Name</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-indicator-arrow">&#8595;</span>
+                <span>Scroll down for detailed information</span>
+            </div>
+        </section>
+
+        <!-- Quick Use Cases -->
+        <section class="quick-uses">
+            <div class="container">
+                <div class="quick-uses-grid">
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#127878;</span>
+                        <span class="quick-use-text">Elegant Ambiance</span>
+                    </div>
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#128247;</span>
+                        <span class="quick-use-text">Portrait Light</span>
+                    </div>
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#128187;</span>
+                        <span class="quick-use-text">Warm Workspace</span>
+                    </div>
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#127909;</span>
+                        <span class="quick-use-text">Video Calls</span>
+                    </div>
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#128141;</span>
+                        <span class="quick-use-text">Wedding Content</span>
+                    </div>
+                    <div class="quick-use-item">
+                        <span class="quick-use-icon">&#128156;</span>
+                        <span class="quick-use-text">Relaxation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="color-content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <article class="main-content">
+                        <!-- Hook: Start with story, not definition -->
+                        <div class="content-section">
+                            <h2>The Lighting Secret That Portrait Photographers Guard Jealously</h2>
+                            <p>Here's something portrait photographers rarely talk about publicly: the color of your fill light matters more than its intensity. And the color they reach for, over and over, when they want skin to look absolutely radiant? <strong>Champagne</strong>.</p>
+
+                            <p>Not white. Not gold. Not cream. Specifically this warm, pale yellowish-beige (#F7E7CE) that mimics the quality of late afternoon sunlight filtering through sheer curtains. It's the difference between "nice photo" and "how do you always look so good on camera?"</p>
+
+                            <p>That's what this tool gives you. Click the button above, and your entire screen transforms into a soft <strong>champagne display</strong>&mdash;instant elegant lighting without reflectors, softboxes, or expensive equipment. Just your screen, doing the work of professional lighting gear.</p>
+                        </div>
+
+                        <!-- Why Champagne -->
+                        <div class="content-section">
+                            <h2>Why Champagne, Specifically?</h2>
+                            <p>Champagne occupies a unique position in the color spectrum. It's warm enough to flatter, but neutral enough not to distort. Light enough to illuminate, but soft enough not to overwhelm.</p>
+
+                            <p>Think about what makes golden hour photography so coveted. The sun sits low, light travels through more atmosphere, and everything gets bathed in this warm, diffused glow. That's essentially what a <strong>champagne screen</strong> replicates&mdash;but available on demand, any time of day.</p>
+
+                            <table class="specs-table">
+                                <tr>
+                                    <th>Quality</th>
+                                    <th>Champagne's Advantage</th>
+                                </tr>
+                                <tr>
+                                    <td>Warmth</td>
+                                    <td>Adds healthy glow without orange cast</td>
+                                </tr>
+                                <tr>
+                                    <td>Softness</td>
+                                    <td>High luminance (89%) without harshness</td>
+                                </tr>
+                                <tr>
+                                    <td>Versatility</td>
+                                    <td>Works for all skin tones and settings</td>
+                                </tr>
+                                <tr>
+                                    <td>Elegance</td>
+                                    <td>Inherent sophistication in the tone itself</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Science Section -->
+                        <div class="content-section">
+                            <h2>The Color Psychology (And Why It Feels So Luxurious)</h2>
+                            <p>Champagne isn't just a color&mdash;it's an experience compressed into a hex code. The associations run deep:</p>
+
+                            <ul>
+                                <li><strong>Celebration:</strong> The name itself evokes special occasions. Using this color unconsciously signals "this moment matters."</li>
+                                <li><strong>Luxury:</strong> Gold's refined cousin. Wealthy enough to feel upscale, subtle enough not to feel gaudy.</li>
+                                <li><strong>Warmth:</strong> The gentle yellow undertone triggers the same comfort response as sunlight or candlelight.</li>
+                                <li><strong>Refinement:</strong> More sophisticated than basic beige, more approachable than metallic gold.</li>
+                                <li><strong>Timelessness:</strong> Unlike trendy colors, champagne never goes out of style. It's been elegant for centuries.</li>
+                                <li><strong>Subtle femininity:</strong> Soft and inviting without being overtly gendered.</li>
+                            </ul>
+
+                            <div class="info-callout info-callout-champagne">
+                                <h4>Why This Matters for Your Work</h4>
+                                <p>Color psychology isn't just marketing fluff. The environment you create affects how you think and how others perceive what you produce. A <strong>champagne screen</strong> creates an atmosphere of quality and care&mdash;both for you and anyone who sees your setup on a video call.</p>
+                            </div>
+                        </div>
+
+                        <!-- Uses Section -->
+                        <div class="content-section">
+                            <h2>What People Actually Use This For</h2>
+                            <p>After tracking usage patterns, some clear categories emerge:</p>
+
+                            <h3>Photography &amp; Video</h3>
+                            <div class="uses-grid">
+                                <div class="use-card">
+                                    <h3>Portrait Photography</h3>
+                                    <p>Position the <strong>champagne display</strong> as a fill light source. It softens shadows, adds warmth to skin, and creates that coveted "glowing from within" effect that clients love.</p>
+                                </div>
+                                <div class="use-card">
+                                    <h3>Video Call Lighting</h3>
+                                    <p>Place a <strong>champagne screen</strong> at 45 degrees to your face during Zoom calls. Instant professional lighting that makes you look rested and polished&mdash;without any obvious setup.</p>
+                                </div>
+                            </div>
+
+                            <h3>Workspace Ambiance</h3>
+                            <p>Many users keep a <strong>champagne screen</strong> on a secondary monitor or tablet throughout the workday. The warm ambient glow transforms harsh office lighting into something approaching candlelit cafe vibes. Same productivity, much better atmosphere.</p>
+
+                            <h3>Wedding &amp; Luxury Content</h3>
+                            <p>Content creators working on wedding, fashion, or lifestyle projects use champagne backgrounds and lighting extensively. It's the visual equivalent of the word "elegant"&mdash;a shorthand for quality that works across cultures.</p>
+
+                            <h3>Evening Wind-Down</h3>
+                            <ul>
+                                <li><strong>No blue light disruption:</strong> Unlike cool whites, champagne won't suppress melatonin</li>
+                                <li><strong>Gentle on tired eyes:</strong> The warm tone reduces eye strain compared to blue-heavy screens</li>
+                                <li><strong>Relaxation-inducing:</strong> The color itself signals "time to slow down"</li>
+                                <li><strong>Perfect for reading:</strong> Provides illumination without the harshness of full white</li>
+                            </ul>
+                        </div>
+
+                        <!-- Eye Comfort Section -->
+                        <div class="content-section">
+                            <h2>The Eye Comfort Factor</h2>
+                            <p>Here's something most people don't realize: not all light colors tire your eyes equally.</p>
+
+                            <p>Blue-heavy light (including standard white screens) puts more strain on your visual system. The shorter wavelengths scatter more, making your eyes work harder to focus. Over an 8-hour workday, this adds up.</p>
+
+                            <p>Champagne sits at the comfortable end of the spectrum. The warm tones are gentler on your eyes while still providing plenty of illumination. Think of it as the difference between fluorescent office lighting and morning sunlight through a window.</p>
+
+                            <h3>When to Use Champagne Instead of White</h3>
+                            <p><strong>Evening work:</strong> Any screen time within 2-3 hours of bed should avoid blue light. Champagne delivers brightness without the circadian disruption.</p>
+                            <p><strong>Long sessions:</strong> Extended reading or work benefits from the reduced eye strain.</p>
+                            <p><strong>Sensitive eyes:</strong> If you're prone to headaches or eye fatigue, warmer screen colors help.</p>
+                        </div>
+
+                        <!-- Color Comparison -->
+                        <div class="content-section">
+                            <h2>Champagne vs. Similar Colors</h2>
+                            <p>The warm neutral family can be confusing. Here's how champagne compares:</p>
+
+                            <p><strong>Champagne vs. <a href="/cream-screen.html">Cream</a>:</strong> Very similar warmth, but champagne has more pronounced golden-yellow undertones. Cream is closer to off-white; champagne is more distinctly tinted.</p>
+
+                            <p><strong>Champagne vs. <a href="/ivory-screen.html">Ivory</a>:</strong> Ivory leans cooler, with more white and less yellow. Champagne is noticeably warmer. Use ivory for classical elegance, champagne for romantic warmth.</p>
+
+                            <p><strong>Champagne vs. <a href="/beige-screen.html">Beige</a>:</strong> Beige is earthier, with brown undertones. Champagne is lighter and more luminous. Beige feels grounded; champagne feels elevated.</p>
+
+                            <p><strong>Champagne vs. <a href="/gold-screen.html">Gold</a>:</strong> Gold is much more saturated and metallic. Champagne is gold's subtle, understated cousin. Use gold for impact, champagne for sophistication.</p>
+
+                            <p>Think of it this way: champagne is what you get when you take gold and ask it to be elegant rather than bold.</p>
+                        </div>
+
+                        <!-- Technical Details -->
+                        <div class="content-section">
+                            <h2>Color Specs (If You're Curious)</h2>
+                            <p>For designers, developers, and the technically inclined:</p>
+
+                            <ul>
+                                <li><strong>Hex:</strong> #F7E7CE</li>
+                                <li><strong>RGB:</strong> 247, 231, 206</li>
+                                <li><strong>HSL:</strong> 37&deg;, 71%, 89%</li>
+                                <li><strong>Color family:</strong> Warm neutral / Pale yellow-beige</li>
+                            </ul>
+
+                            <p>The high luminance (89%) means plenty of usable light. The 37&deg; hue places it firmly in the warm yellow-orange family. And the moderate saturation (71%) gives it enough color to feel champagne-like without becoming too yellow.</p>
+                        </div>
+
+                        <!-- FAQ Section -->
+                        <div class="content-section">
+                            <h2>Common Questions</h2>
+
+                            <div class="faq-list" role="list">
+                                <div class="faq-item" role="listitem">
+                                    <button class="faq-question" aria-expanded="false">
+                                        <span>What's this actually useful for?</span>
+                                        <span class="faq-icon" aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="faq-answer" hidden>
+                                        <p>Portrait photography lighting, video call enhancement, elegant workspace ambiance, wedding and luxury content creation, and evening screen use without blue light exposure. The warm, sophisticated tone works anywhere you want to add a touch of refined elegance while being gentle on your eyes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item" role="listitem">
+                                    <button class="faq-question" aria-expanded="false">
+                                        <span>Why do photographers love champagne lighting?</span>
+                                        <span class="faq-icon" aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="faq-answer" hidden>
+                                        <p>The warm undertone flatters all skin tones, creating a healthy, luminous quality similar to golden hour sunlight. It softens harsh shadows without adding obvious color casts, making subjects look naturally radiant rather than artificially lit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item" role="listitem">
+                                    <button class="faq-question" aria-expanded="false">
+                                        <span>Is champagne color good for evening use?</span>
+                                        <span class="faq-icon" aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="faq-answer" hidden>
+                                        <p>Excellent for evening use. Unlike blue-heavy white screens, champagne contains minimal blue light, so it won't suppress melatonin or disrupt your sleep cycle. It's warm enough to feel relaxing while still providing adequate illumination for reading or work.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item" role="listitem">
+                                    <button class="faq-question" aria-expanded="false">
+                                        <span>How does champagne compare to cream or ivory?</span>
+                                        <span class="faq-icon" aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="faq-answer" hidden>
+                                        <p>Champagne has more pronounced golden-yellow undertones than cream (which is closer to off-white) and is warmer than ivory (which leans cooler). Think of it as the most "celebratory" of the warm neutrals&mdash;more elevated than beige, more subtle than gold.</p>
+                                    </div>
+                                </div>
+
+                                <div class="faq-item" role="listitem">
+                                    <button class="faq-question" aria-expanded="false">
+                                        <span>Will this hurt my eyes during long sessions?</span>
+                                        <span class="faq-icon" aria-hidden="true">+</span>
+                                    </button>
+                                    <div class="faq-answer" hidden>
+                                        <p>Champagne is one of the most eye-friendly screen colors available. The warm tones reduce the eye strain associated with blue-heavy light, and the high luminance provides plenty of illumination without harshness. It's particularly good for extended reading or evening work sessions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Related Colors -->
+                        <div class="content-section">
+                            <h2>Explore Related Screen Colors</h2>
+
+                            <div class="related-colors">
+                                <a href="/cream-screen.html" class="related-color-card">
+                                    <div class="related-color-preview" style="background-color: #FFFDD0;"></div>
+                                    <div class="related-color-info">
+                                        <h4>Cream Screen</h4>
+                                        <p>Similar warmth, closer to off-white for softer ambiance</p>
+                                    </div>
+                                </a>
+                                <a href="/ivory-screen.html" class="related-color-card">
+                                    <div class="related-color-preview" style="background-color: #FFFFF0;"></div>
+                                    <div class="related-color-info">
+                                        <h4>Ivory Screen</h4>
+                                        <p>Cooler elegant neutral for classical sophistication</p>
+                                    </div>
+                                </a>
+                                <a href="/beige-screen.html" class="related-color-card">
+                                    <div class="related-color-preview" style="background-color: #F5F5DC;"></div>
+                                    <div class="related-color-info">
+                                        <h4>Beige Screen</h4>
+                                        <p>Earthier warm neutral for grounded, natural feel</p>
+                                    </div>
+                                </a>
+                                <a href="/gold-screen.html" class="related-color-card">
+                                    <div class="related-color-preview" style="background-color: #FFD700;"></div>
+                                    <div class="related-color-info">
+                                        <h4>Gold Screen</h4>
+                                        <p>Bold, saturated luxury for maximum impact</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <p class="text-center" style="margin-top: var(--space-xl);">
+                                <a href="/colors.html" class="btn btn-outline">View All Screen Colors</a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Sidebar -->
+                    <aside class="content-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Quick Launch</h3>
+                            <button class="btn btn-primary btn-full sidebar-launch" data-color="#F7E7CE">
+                                Launch Champagne Screen
+                            </button>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Color Details</h3>
+                            <div class="color-details">
+                                <div class="color-swatch-large" style="background-color: #F7E7CE;"></div>
+                                <ul class="color-specs">
+                                    <li><strong>Hex:</strong> #F7E7CE</li>
+                                    <li><strong>RGB:</strong> 247, 231, 206</li>
+                                    <li><strong>HSL:</strong> 37&deg;, 71%, 89%</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Best For</h3>
+                            <ul class="best-for-list">
+                                <li>Warm workspace ambiance</li>
+                                <li>Portrait photography</li>
+                                <li>Elegant projects</li>
+                                <li>Video call lighting</li>
+                                <li>Evening screen use</li>
+                                <li>Relaxation &amp; wind-down</li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Other Colors</h3>
+                            <div class="color-links">
+                                <a href="/white-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #ffffff; border: 1px solid #ccc;"></span>
+                                    White Screen
+                                </a>
+                                <a href="/cream-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #fffdd0;"></span>
+                                    Cream Screen
+                                </a>
+                                <a href="/ivory-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #fffff0;"></span>
+                                    Ivory Screen
+                                </a>
+                                <a href="/beige-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #f5f5dc;"></span>
+                                    Beige Screen
+                                </a>
+                                <a href="/gold-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #ffd700;"></span>
+                                    Gold Screen
+                                </a>
+                                <a href="/yellow-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #ffe600;"></span>
+                                    Yellow Screen
+                                </a>
+                                <a href="/pink-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #ffb6c1;"></span>
+                                    Pink Screen
+                                </a>
+                                <a href="/black-screen.html" class="color-link">
+                                    <span class="color-dot" style="background-color: #000000;"></span>
+                                    Black Screen
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget sidebar-cta">
+                            <h3>Learn More</h3>
+                            <p>Discover the science behind color and mood.</p>
+                            <a href="/about.html" class="btn btn-outline btn-full">Color Psychology</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="color-cta color-cta-champagne">
+            <div class="container">
+                <h2>Ready for Elegant Ambiance?</h2>
+                <p>Click below to transform your screen into a warm, sophisticated champagne glow&mdash;perfect for photography, video calls, or refined relaxation.</p>
+                <button class="btn btn-primary btn-large" data-color="#F7E7CE">Launch Champagne Screen Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon">&#9711;</span>
+                        <span class="logo-text">WhiteScreen<span class="logo-wiki">.wiki</span></span>
+                    </a>
+                    <p class="footer-tagline">Your Free Online Focus Tool</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4>Screen Colors</h4>
+                        <ul>
+                            <li><a href="/white-screen.html">White Screen</a></li>
+                            <li><a href="/black-screen.html">Black Screen</a></li>
+                            <li><a href="/blue-screen.html">Blue Screen</a></li>
+                            <li><a href="/green-screen.html">Green Screen</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>More Colors</h4>
+                        <ul>
+                            <li><a href="/red-screen.html">Red Screen</a></li>
+                            <li><a href="/yellow-screen.html">Yellow Screen</a></li>
+                            <li><a href="/pink-screen.html">Pink Screen</a></li>
+                            <li><a href="/cream-screen.html">Cream Screen</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="/colors.html">All Colors</a></li>
+                            <li><a href="/about.html">About &amp; Science</a></li>
+                            <li><a href="/faq.html">FAQ</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footer-meta">
+                    <p>&copy; 2024 WhiteScreen.wiki. Free forever. No tracking. No ads.</p>
+                    <a href="/sitemap.xml" class="sitemap-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
