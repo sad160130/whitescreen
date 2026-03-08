@@ -2,267 +2,298 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://whitescreen.wiki/</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/colors.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- Individual Color Pages -->
     <url>
         <loc>https://whitescreen.wiki/white-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/black-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/blue-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/green-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/red-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/yellow-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/pink-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/cream-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/gray-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/cyan-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/orange-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/purple-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/brown-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/teal-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/navy-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/lavender-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/gold-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/coral-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/mint-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/silver-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/maroon-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/turquoise-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/peach-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/indigo-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/magenta-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/olive-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/salmon-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/slate-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/lime-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/beige-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/charcoal-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/violet-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/rose-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/azure-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/amber-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/ivory-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/crimson-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/periwinkle-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/tan-screen.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- New Color Pages -->
+    <url>
+        <loc>https://whitescreen.wiki/mauve-screen.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/sage-screen.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/champagne-screen.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/burgundy-screen.html</loc>
+        <lastmod>2026-03-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/cerulean-screen.html</loc>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- Resource Pages -->
     <url>
         <loc>https://whitescreen.wiki/about.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/faq.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://whitescreen.wiki/contact.html</loc>
-        <lastmod>2024-01-01</lastmod>
+        <lastmod>2026-03-08</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
