@@ -278,6 +278,36 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://whitescreen.wiki/cobalt-screen.html</loc>
+        <lastmod>2026-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/tangerine-screen.html</loc>
+        <lastmod>2026-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/plum-screen.html</loc>
+        <lastmod>2026-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/copper-screen.html</loc>
+        <lastmod>2026-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/pewter-screen.html</loc>
+        <lastmod>2026-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <!-- Resource Pages -->
     <url>
         <loc>https://whitescreen.wiki/about.html</loc>
