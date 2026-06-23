@@ -2870,8 +2870,33 @@ strong {
     color: #5c4a2a;
 }
 
+.color-hero-chartreuse {
+    background: linear-gradient(135deg, #5fbf00 0%, #7FFF00 100%);
+    color: #333333;
+}
+
 .color-hero-cerulean {
     background: linear-gradient(135deg, #005580 0%, #007BA7 100%);
+    color: #ffffff;
+}
+
+.color-hero-vermilion {
+    background: linear-gradient(135deg, #a32d24 0%, #E34234 100%);
+    color: #ffffff;
+}
+
+.color-hero-tiffany-blue {
+    background: linear-gradient(135deg, #087d79 0%, #0ABAB5 100%);
+    color: #ffffff;
+}
+
+.color-hero-midnight {
+    background: linear-gradient(135deg, #0d0d38 0%, #191970 100%);
+    color: #ffffff;
+}
+
+.color-hero-ochre {
+    background: linear-gradient(135deg, #8B5A00 0%, #CC7722 100%);
     color: #ffffff;
 }
 
