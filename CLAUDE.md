@@ -63,6 +63,6 @@ ls -la *.html | wc -l
 
 ## Current Color Count
 
-80 unique color screen pages (as of 2026-07-11)
+85 unique color screen pages (as of 2026-07-11)
 
-Latest additions: Raspberry, Prussian Blue, Topaz, Honeydew, Thistle
+Latest additions: Sangria, Apricot, Cornflower, Pistachio, Mulberry
