@@ -63,6 +63,6 @@ ls -la *.html | wc -l
 
 ## Current Color Count
 
-85 unique color screen pages (as of 2026-07-11)
+90 unique color screen pages (as of 2026-07-11)
 
-Latest additions: Sangria, Apricot, Cornflower, Pistachio, Mulberry
+Latest additions: Saffron, Blush, Onyx, Celadon, Mahogany
