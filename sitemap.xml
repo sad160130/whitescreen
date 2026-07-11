@@ -428,6 +428,36 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://whitescreen.wiki/raspberry-screen.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/prussian-blue-screen.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/topaz-screen.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/honeydew-screen.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://whitescreen.wiki/thistle-screen.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <!-- Resource Pages -->
     <url>
         <loc>https://whitescreen.wiki/about.html</loc>
