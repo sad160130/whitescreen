@@ -63,6 +63,6 @@ ls -la *.html | wc -l
 
 ## Current Color Count
 
-60 unique color screen pages (as of 2026-06-23)
+80 unique color screen pages (as of 2026-07-11)
 
-Latest additions: Vermilion, Tiffany Blue, Chartreuse, Ochre, Midnight
+Latest additions: Raspberry, Prussian Blue, Topaz, Honeydew, Thistle
