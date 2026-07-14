@@ -63,6 +63,6 @@ ls -la *.html | wc -l
 
 ## Current Color Count
 
-90 unique color screen pages (as of 2026-07-11)
+95 unique color screen pages (as of 2026-07-14)
 
-Latest additions: Saffron, Blush, Onyx, Celadon, Mahogany
+Latest additions: Taupe, Fern, Flamingo, Ultramarine, Buff
