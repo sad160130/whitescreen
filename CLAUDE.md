@@ -63,6 +63,6 @@ ls -la *.html | wc -l
 
 ## Current Color Count
 
-95 unique color screen pages (as of 2026-07-14)
+100 unique color screen pages (as of 2026-07-15)
 
-Latest additions: Taupe, Fern, Flamingo, Ultramarine, Buff
+Latest additions: Garnet, Arctic, Clover, Peony, Caramel
